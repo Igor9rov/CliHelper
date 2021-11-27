@@ -17,7 +17,7 @@ class App961Manager(AppManager):
         self.cutting = input_white_list_of_values(msg, ["0", "1", "2"])
         self.number_of_days = input_white_list_of_values("Выберите кол-во дней [1]...[30]:\n",
                                                          list(map(str, range(1, 31))))
-        self.conditions = input_white_list_of_values("Осадки или температура?\n", ["0", "1", "2"])
+        self.conditions = input_white_list_of_values("Осадки или температура?[0],[1],[2]\n", ["0", "1", "2"])
 
     @property
     def app_args(self):

@@ -84,7 +84,7 @@ class AppManager(ABC):
             date_string = f"{day_date.year} {day_date.month} {day_date.day} {self.hour} {self.minute}"
             input_string = "\n".join([date_string, *self.app_args])
             subprocess.run(self.app_path, encoding="utf8", input=input_string)
-        input("Процессы отработали успешно. Для вызода нажмите выход.")
+        input("Процессы отработали успешно. Для выхода нажмите Enter.")
 
     @property
     @abstractmethod
